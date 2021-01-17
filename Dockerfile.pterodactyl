@@ -1,0 +1,21 @@
+FROM beammp:latest
+
+MAINTAINER Bilel MEDIMEGH, bilel.medimegh@gmail.com
+
+RUN adduser --disabled-password --home /home/container container
+
+
+
+RUN mv /BeamMP/* /home/container
+
+RUN chown -R container:container /home/container/* 
+
+USER container
+
+ENV USER=container HOME=/home/container
+
+WORKDIR /home/container
+
+COPY ./pterodactyl-entrypoint.sh /entrypoint.sh
+
+CMD ["/bin/bash", "/entrypoint.sh"]
