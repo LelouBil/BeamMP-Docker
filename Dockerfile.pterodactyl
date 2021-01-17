@@ -6,8 +6,6 @@ RUN adduser --disabled-password --home /home/container container
 
 RUN chmod -R 777 /BeamMP
 
-RUN chown -R container:container /home/container/* 
-
 USER container
 
 ENV USER=container HOME=/home/container
