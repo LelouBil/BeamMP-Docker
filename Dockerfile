@@ -1,4 +1,7 @@
 FROM debian:10
+
+MAINTAINER Bilel MEDIMEGH, bilel.medimegh@gmail.com
+
 RUN mkdir /BeamMP
 WORKDIR /BeamMP
 RUN apt-get update && apt-get install -y --no-install-recommends liblua5.3 libz-dev rapidjson-dev libcurl4-openssl-dev curl wget ca-certificates
