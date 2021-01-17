@@ -14,4 +14,4 @@ EXPOSE 30814/tcp
 EXPOSE 30814/udp
 
 
-ENTRYPOINT ["/BeamMP/BeamMP-Server"]
+CMD ["/BeamMP/BeamMP-Server"]
