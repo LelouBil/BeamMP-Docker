@@ -4,9 +4,7 @@ MAINTAINER Bilel MEDIMEGH, bilel.medimegh@gmail.com
 
 RUN adduser --disabled-password --home /home/container container
 
-
-
-RUN mv /BeamMP/* /home/container
+RUN chmod -R 777 /BeamMP
 
 RUN chown -R container:container /home/container/* 
 
