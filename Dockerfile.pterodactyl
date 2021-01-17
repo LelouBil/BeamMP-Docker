@@ -1,4 +1,4 @@
-FROM beammp:latest
+FROM leloubil/beammp:latest
 
 MAINTAINER Bilel MEDIMEGH, bilel.medimegh@gmail.com
 
